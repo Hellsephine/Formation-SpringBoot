@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<title>Good Thymes Virtual Grocery</title>
+ 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+
+	<form method='post' action='#' th:action='@{/exercices/forms/exercice7-form}' th:object='${customer}' >
+		<input type='text' th:field='*{name}'><br>
+		<input type='number' th:field='*{age}'><br>
+		<input type='submit' value='Envoyer'>
+	</form>
+
+</body>
+</html>
