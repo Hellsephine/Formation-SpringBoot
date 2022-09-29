@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<title>Good Thymes Virtual Grocery</title>
+ 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+
+	<p th:text='${characterName}'></p>
+	
+	<div th:if='${characterAge == null}'>
+		<p>L'âge est inconnu !</p>
+	</div>
+
+	<div th:if='${characterAge != null}'>
+		<p>Votre page est <span th:text='${characterAge}'/></p>
+	</div>
+	
+</body>
+</html>
