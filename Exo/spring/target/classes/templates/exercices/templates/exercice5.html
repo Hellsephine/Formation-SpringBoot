@@ -1,0 +1,30 @@
+<!DOCTYPE >
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<title>Template Exercice 5</title>
+ 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+ 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<h1><span th:text='${player.playerName}'></span></h1>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-4 p-0 card border border-success">
+				<div class="card-header">
+					<span th:text='${player.game.gameName}'></span>
+				</div>
+				<ul class="list-group list-group-flush">
+					<li class="list-group-item"><span th:text='${player.game.devStudio}'></span></li>
+					<li class="list-group-item"><span th:text='${player.game.releaseYear}'></span></li>
+					<li class="list-group-item"><span th:text='${player.game.gender}'></span></li>
+				</ul>	
+			</div>
+		</div>
+	</div>
+</body>
+</html>

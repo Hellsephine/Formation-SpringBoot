@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+ 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<title>Exercice Dependency Injection Form</title>
+</head>
+<body>
+<form method='POST' action='/exercices/dependency/exerciceDependency'>
+	
+	<input class="form-control my-2" type="text" name="name" placeholder="Entrer le nom de l'objet à ajouter au panier" aria-label="">
+	
+	<input class="form-control my-2" type="text" name="price" placeholder="Entrer le prix de l'objet à ajouter au panier" aria-label="">
+	
+	<input type='submit' value='Envoyez'>
+	
+	<a class="btn btn-success" href="/exercices/dependency/exerciceDependency" role="button">Vers votre panier</a>
+	
+</form>
+</body>
+</html>
